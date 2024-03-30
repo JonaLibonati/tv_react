@@ -24,47 +24,47 @@ export const channels = [
     },
     {
         name : 'Canal13',
-        url : 'https://flow9.txt.boats/cvatt.html?get=QXJ0ZWFySEQ&lang=1&start=true',
+        url : '?get=QXJ0ZWFySEQ&lang=1&start=true',
         images: c13_img,
     },
     {
         name : 'TyC',
-        url : 'https://flow9.txt.boats/cvatt.html?get=VHlDU3BvcnQ&start=true',
+        url : '?get=VHlDU3BvcnQ&start=true',
         images: tyc_img,
     },
     {
         name : 'ESPN',
-        url : 'https://flow9.txt.boats/cvatt.html?get=RVNQTjJIRA&lang=1&start=true',
+        url : '?get=RVNQTjJIRA&lang=1&start=true',
         images: espn_img,
     },
     {
         name : 'ESPN2',
-        url : 'https://flow9.txt.boats/cvatt.html?get=RVNQTjJfQXJn&start=true',
+        url : '?get=RVNQTjJfQXJn&start=true',
         images: espn2_img,
     },
     {
         name : 'ESPN3',
-        url : 'https://flow9.txt.boats/cvatt.html?get=RVNQTjM&start=true',
+        url : '?get=RVNQTjM&start=true',
         images: espn3_img,
     },
     {
         name : 'FOX',
-        url : 'https://flow9.txt.boats/cvatt.html?get=Rm94U3BvcnRz&lang=1&start=true',
+        url : '?get=Rm94U3BvcnRz&lang=1&start=true',
         images: fox_img,
     },
     {
         name : 'ESPNpremium',
-        url : 'https://flow9.txt.boats/cvatt.html?get=Rm94X1Nwb3J0c19QcmVtaXVuX0hE&lang=1&start=true',
+        url : '?get=Rm94X1Nwb3J0c19QcmVtaXVuX0hE&lang=1&start=true',
         images: espnPre_img,
     },
     {
         name : 'TNT',
-        url : 'https://flow9.txt.boats/cvatt.html?get=VE5UX1Nwb3J0c19IRA&start=true',
+        url : '?get=VE5UX1Nwb3J0c19IRA&start=true',
         images: tnt_img,
     },
     {
         name : 'NBA',
-        url : 'https://flow9.txt.boats/cvatt.html?get=TkJBX1RW&lang=1&start=true',
+        url : '?get=TkJBX1RW&lang=1&start=true',
         images: nba_img,
     },
     {

@@ -57,8 +57,6 @@ export const Channel = () => {
   useEffect(() => {
     divFrame.current.addEventListener("keydown", handleKey);
 
-    console.log(diva.current.contentWindow.focus() )
-
     setTimeout(() => {logo.current.style.opacity = 0}, 1000)
 
     setInterval ( () => {

@@ -77,7 +77,7 @@ export const Channel = () => {
   return (
     <>
         <FullScreen handle={handle} >
-          <div ref={divFrame} tabIndex={-1}>
+          <div ref={divFrame} tabIndex={-1} className='pointer-events-none'>
             <img ref={logo} className='absolute h-[200px] m-9 transition-opacity duration-[2s]' src={channel.images} />
             <iframe ref={diva} className='h-dvh' allow="encrypted-media" width="100%" height="100%" allowFullScreen src={channel.url}></iframe>
           </div>

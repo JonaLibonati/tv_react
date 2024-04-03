@@ -1,10 +1,10 @@
-import { defineConfig, mergeConfig } from 'vite';
+import { defineConfig, mergeConfig } from "vite";
 import {
   getBuildConfig,
   getBuildDefine,
   external,
   pluginHotRestart,
-} from './vite.base.config.mjs';
+} from "./vite.base.config.mjs";
 
 // https://vitejs.dev/config
 export default defineConfig((env) => {
@@ -12,22 +12,28 @@ export default defineConfig((env) => {
   const forgeEnv = env;
   const { forgeConfigSelf } = forgeEnv;
   const define = getBuildDefine(forgeEnv);
+
+  // TODO: CORREGIR - ESTO ANDA PERO NO ESTA TOMANDO LA ENV KEY QUE SETEO.
+  define["process.env.VITE_DEBUG"] = process.env.VITE_DEBUG
+    ? Boolean(parseInt(process.env.VITE_DEBUG))
+    : true;
+
   const config = {
     build: {
       lib: {
         entry: forgeConfigSelf.entry,
-        fileName: () => '[name].js',
-        formats: ['cjs'],
+        fileName: () => "[name].js",
+        formats: ["cjs"],
       },
       rollupOptions: {
         external,
       },
     },
-    plugins: [pluginHotRestart('restart')],
+    plugins: [pluginHotRestart("restart")],
     define,
     resolve: {
       // Load the Node.js entry.
-      mainFields: ['module', 'jsnext:main', 'jsnext'],
+      mainFields: ["module", "jsnext:main", "jsnext"],
     },
   };
 
